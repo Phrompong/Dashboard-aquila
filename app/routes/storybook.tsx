@@ -5,6 +5,9 @@ export default function StoryBook() {
       <li>
         <a href="/gas-volume">Gas Volume Table</a>
       </li>
+      <li>
+        <a href="/demand">Demand Table</a>
+      </li>
     </div>
   );
 }
