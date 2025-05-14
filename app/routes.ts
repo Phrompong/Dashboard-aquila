@@ -7,7 +7,6 @@ import {
 } from "@react-router/dev/routes";
 
 export default [
-  index("./routes/home.tsx"),
-  route("story-book", "./routes/storybook.tsx"),
+  index("./routes/storybook.tsx"),
   route("gas-volume", "./components/tables/GasVolume.tsx"),
 ] satisfies RouteConfig;
