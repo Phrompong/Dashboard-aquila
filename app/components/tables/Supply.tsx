@@ -1,0 +1,172 @@
+import "./styles.css";
+import TableType1 from "./TableType1";
+
+export default function Supply() {
+  const data = {
+    title: "Supply",
+    headers: [
+      "THAILAND",
+      "Dec-24",
+      "Jan-25",
+      "Feb-25",
+      "Mar-25",
+      "Apr-25",
+      "May-25",
+      "Jun-25",
+      "Jul-25",
+      "Aug-25",
+      "Sep-25",
+      "Oct-25",
+      "Nov-25",
+      "Dec-25",
+    ],
+    rows: [
+      {
+        thailand: "Total Supply (MMscfd)",
+        dec0: "4,340",
+        jan: "4,562",
+        feb: "4,894",
+        mar: "4,927",
+        apr: "5,053",
+        may: "5,244",
+        jun: "5,021",
+        jul: "4,737",
+        aug: "4,696",
+        sep: "4,672",
+        oct: "4,825",
+        nov: "4,912",
+        dec: "4,473",
+      },
+      {
+        thailand: "Pipe Gas (MMscfd)",
+        dec0: "2970",
+        jan: "3079(-30)",
+        feb: "3063(-12)",
+        mar: "3,048",
+        apr: "3,098",
+        may: "3,164",
+        jun: "3,044",
+        jul: "3,166",
+        aug: "3,096",
+        sep: "3,155",
+        oct: "3,265",
+        nov: "3,190",
+        dec: "3,144",
+      },
+      {
+        thailand: "LNG (MMscfd)",
+        dec0: "1370(+95)",
+        jan: "1483(141)",
+        feb: "1831(163)",
+        mar: "1,879",
+        apr: "1,955",
+        may: "2,080",
+        jun: "1,977",
+        jul: "1,571",
+        aug: "1,600",
+        sep: "1,517",
+        oct: "1,560",
+        nov: "1,722",
+        dec: "1,329",
+      },
+    ],
+  };
+
+  const dataType2 = {
+    headers: [
+      "THAILAND",
+      "Dec-24",
+      "Jan-25",
+      "Feb-25",
+      "Mar-25",
+      "Apr-25",
+      "May-25",
+      "Jun-25",
+      "Jul-25",
+      "Aug-25",
+      "Sep-25",
+      "Oct-25",
+      "Nov-25",
+      "Dec-25",
+    ],
+    rows: [
+      {
+        thailand: "ประมาณการราคา Pool (บาท/MMBtu)",
+        dec0: "305",
+        jan: "274",
+        feb: "313",
+        mar: "320",
+        apr: "310",
+        may: "308",
+        jun: "309",
+        jul: "304",
+        aug: "291",
+        sep: "293",
+        oct: "291",
+        nov: "292",
+        dec: "320",
+      },
+    ],
+  };
+
+  const dataType3 = {
+    headers: [
+      "สมมติฐานด้านราคา",
+      "Dec-24",
+      "Jan-25",
+      "Feb-25",
+      "Mar-25",
+      "Apr-25",
+      "May-25",
+      "Jun-25",
+      "Jul-25",
+      "Aug-25",
+      "Sep-25",
+      "Oct-25",
+      "Nov-25",
+      "Dec-25",
+    ],
+    rows: [
+      {
+        thailand: "Exchange Rate (THB/USD)",
+        dec0: "33.4",
+        jan: "33.4",
+        feb: "33.1",
+        mar: "33.1",
+        apr: "33.1",
+        may: "33.0",
+        jun: "33.0",
+        jul: "33.0",
+        aug: "32.7",
+        sep: "32.7",
+        oct: "32.7",
+        nov: "34.3",
+        dec: "34.3",
+      },
+      {
+        thailand: "JKM (USD/MMBTU)",
+        dec0: "13.6",
+        jan: "15.0",
+        feb: "14.8",
+        mar: "14.6",
+        apr: "14.2",
+        may: "13.1",
+        jun: "13.5",
+        jul: "13.6",
+        aug: "13.5",
+        sep: "13.3",
+        oct: "13.5",
+        nov: "14.8",
+        dec: "16.0",
+      },
+    ],
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen p-12 gap-12">
+      <TableType1 data={data} />
+      <TableType1 data={dataType2} />
+      <TableType1 data={dataType3} />
+    </div>
+  );
+}

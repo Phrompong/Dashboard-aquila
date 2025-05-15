@@ -8,6 +8,9 @@ export default function StoryBook() {
       <li>
         <a href="/demand">Demand Table</a>
       </li>
+      <li>
+        <a href="/supply">Supply Table</a>
+      </li>
     </div>
   );
 }
